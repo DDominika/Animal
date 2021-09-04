@@ -1,0 +1,15 @@
+@import './variables';
+@import './nav';
+@import './content';
+@import './category';
+@import './backvideo';
+@import './header';
+@import './logo';
+*{ /* a csillag jelentése: mindenre vonatkozik az adott lapon*/ 
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+
