@@ -1,0 +1,37 @@
+@import './variables';
+
+@mixin flexProp() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+}
+.navclass{
+    @include flexProp();
+}
+.nav-links{
+  padding: 28px 0;
+  li{
+    display: inline-block;
+    margin: 0 15px;
+    a{
+      text-decoration: none;
+      color: $textcolors;
+      padding: 5px 0;
+      position: relative;
+      a::after{
+        content: '';
+        background: $bg;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: width 0.5s;
+      }
+      a:hover::after{
+        width: 100%;
+      }
+    }
+  }
+}

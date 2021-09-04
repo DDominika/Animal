@@ -1,0 +1,25 @@
+@import './variables';
+
+@mixin flexCenter($margintop, $direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: $margintop;
+    flex-direction: $direction;
+}
+.category-list{
+   @include flexCenter(40px, 0);
+   .category{
+    @include flexCenter(0, column);
+    width: 80px;
+    height: 80px;
+    background: $categorybg;
+    margin: 0 10px;
+    font-size: 12px;
+    img{
+        width: 25px;
+        margin-bottom: 5px;
+    }
+    }
+}
+

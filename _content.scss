@@ -1,0 +1,39 @@
+@import './variables';
+
+.content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    max-width: 900px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $textcolors;
+    padding-top: 50px;
+    h1{
+        font-size: 60px;
+        font-weight: 600px;
+        margin-bottom: 40px;
+    }
+    form{
+        background: $contentformbg;
+        padding: 10px;
+        border-radius: 8px;
+        display: flex;
+        input{
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 0 20px;
+            font-size: 18px;
+        }
+        button{
+            background: $btns;
+            color: $textcolors;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    }
+  }
